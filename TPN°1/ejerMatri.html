@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var nombres = ["nacho", "arek", "Laura"];
+
+        function verificarNombre() {
+            var nombreIngresado = prompt("Ingrese un nombre:");
+            var encontrado = false;
+
+            for (var i = 0; i < nombres.length; i++) {
+                if (nombreIngresado.toLowerCase() === nombres[i].toLowerCase()) {
+                    encontrado = true;
+                    break;
+                }
+            }
+
+            if (encontrado) {
+                document.write(nombreIngresado + "<br>");
+            } else {
+                alert("Nombre no existe en la lista");
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="verificarNombre()">Verificar Nombre</button>
+</body>
+</html>
+
+
+<!--1. Ejercicio: Modifique la matriz, para que cuando se ingrese un nombre que no existe en la lista
+arroje un alert “Nombre no existe en la lista”.-->
