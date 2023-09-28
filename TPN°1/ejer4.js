@@ -1,5 +1,5 @@
-var edad = 60; // Cambia esto a la edad que quieras verificar
-var genero = "Mujer"; // Cambia esto a "Hombre" o "Mujer"
+let edad = 60; // Cambia esto a la edad que quieras verificar
+let genero = "Mujer"; // Cambia esto a "Hombre" o "Mujer"
 
 if (genero === "Hombre" && edad >= 65) {
     console.log("Este hombre está jubilado.");

@@ -1,4 +1,4 @@
-var edad = 65; // Cambia esto a la edad que quieras verificar
+let edad = 65; // Cambia esto a la edad que quieras verificar
 
 if (edad >= 65) {
     console.log("Esta persona está jubilada.");

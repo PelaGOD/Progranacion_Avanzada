@@ -1,11 +1,11 @@
-var num1 = 10;
+let num1 = 10;
 var num2 = 5;
 
 // Operaciones numéricas
-var suma = num1 + num2;
-var resta = num1 - num2;
-var multiplicacion = num1 * num2;
-var division = num1 / num2;
+let suma = num1 + num2;
+let resta = num1 - num2;
+let multiplicacion = num1 * num2;
+let division = num1 / num2;
 
 console.log("Suma:", suma);
 console.log("Resta:", resta);
