@@ -1,0 +1,77 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  justify-items: center;
+}
+
+.card {
+  background: linear-gradient(145deg, #1e1e1e, #2b2b2b);
+  border: 1px solid #333;
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 280px;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  background: #111;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card h3 {
+  padding: 1rem;
+  margin: 0;
+  font-size: 1.2rem;
+  color: #fff;
+  border-top: 1px solid #333;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+:root {
+  --font-family: 'Poppins', system-ui, sans-serif;
+  --color-bg: #181818;   /* Fondo general (oscuro pero no negro) */
+  --color-card: #202020; /* Fondo de tarjetas */
+  --color-card-alt: #2a2a2a;
+  --color-text: #e0e0e0; /* Texto más suave */
+  --color-accent: #ff9800; /* Color de acento (botones, hover) */
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family);
+}
+
+header {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--color-accent);
+  letter-spacing: 1px;
+}
